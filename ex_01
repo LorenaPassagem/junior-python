@@ -1,0 +1,24 @@
+#%%
+import pandas as pd
+data = {'Nome': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
+        'Idade': [25, 30, 22, 35, 18],
+        'Cidade': ['SP', 'RJ', 'SP', 'MG', 'RS']
+}
+
+# %%
+df_data = pd.DataFrame(data)
+df_data
+# %%
+df_data.head()
+# %%
+maiores_idade = df_data['Idade'] > 18
+maiores_idade
+# %%
+df_data[maiores_idade]
+# %%
+ordenado = df_data.sort_values(by='Idade', ascending=True)
+# %%
+ordenado
+# %%
+media_idades = df_data['Idade'].mean()
+media_idades
