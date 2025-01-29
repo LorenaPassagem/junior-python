@@ -1,0 +1,29 @@
+#%%
+import pandas as pd
+
+# %%
+idades = [30,43,90,34]
+idades
+# %%
+serie_idades = pd.Series(idades)
+
+# %%
+serie_idades
+
+# %%
+"""Media"""
+serie_idades.mean()
+# %%
+"""Desvio padrão"""
+serie_idades.std()
+# %%
+serie_idades.median()
+# %%
+""""Variancia"""
+serie_idades.var()
+# %%
+"""percentil"""
+serie_idades.quantile()
+# %%
+"""Retorna as estatisticas todas """
+serie_idades.describe()
